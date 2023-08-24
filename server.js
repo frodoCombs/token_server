@@ -6,8 +6,8 @@ const server = http.createServer((req, res) => {
   // Specify the path to the file you want to serve
   const filePath = path.join(__dirname, 'access_token.txt');
   // Set CORS headers
-  res.setHeader('Access-Control-Allow-Headers', req.header.origin);
-  // res.setHeader('Access-Control-Allow-Origin', '*');
+  // res.setHeader('Access-Control-Allow-Headers', req.header.origin);
+  res.setHeader('Access-Control-Allow-Origin', '*');
   // res.setHeader('Access-Control-Request-Method', '*');
   // res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
   // res.setHeader('Access-Control-Allow-Headers', '*');
