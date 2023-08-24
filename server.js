@@ -18,6 +18,8 @@ const server = http.createServer((req, res) => {
       res.end('Internal Server Error');
       console.error('Error reading the file:', err);
     } else {
+      const headers = res.headers;
+      console.log(headers);
       res.writeHead(200, { 'Content-Type': 'text/plain' });
       res.end(data);
     }
