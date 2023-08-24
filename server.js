@@ -8,9 +8,9 @@ const server = http.createServer((req, res) => {
   // Set CORS headers
   // res.setHeader('Access-Control-Allow-Headers', req.header.origin);
   res.setHeader('Access-Control-Allow-Origin', '*');
-  // res.setHeader('Access-Control-Request-Method', '*');
-  // res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
-  // res.setHeader('Access-Control-Allow-Headers', '*');
+  res.setHeader('Access-Control-Request-Method', '*');
+  res.setHeader('Access-Control-Allow-Methods', '*');
+  res.setHeader('Access-Control-Allow-Headers', '*');
   // Read the contents of the file and send as response
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) {
