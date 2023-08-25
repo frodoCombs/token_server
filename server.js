@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
-const PORT = 8192; // You can change this to the port you prefer
+const PORT = 3000; // You can change this to the port you prefer
 server.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
